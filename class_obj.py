@@ -17,3 +17,5 @@ print(student2.roll)
 #o/p => 'Student' object has no attribue 'name'
 print(student1.__dict__)
 #o/p => {'name': 'John', 'roll': 101}
+print(student2.__dict__)
+#o/p => {}  an empty dictionary not ERROR
