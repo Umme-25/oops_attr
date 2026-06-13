@@ -19,3 +19,6 @@ class Student:
     def sports(self,sports_name):
         print(f"The student plays {sports_name}")
     
+student1 = Student()
+
+student2 = Student()
