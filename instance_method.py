@@ -30,16 +30,24 @@ class Student:
     This is a class Student o manage student info and activities
     """
 
-    def study(self):
+    def study(self,n_hours):
         print(f"Self is:{self}")  #o/p => self is: <__main__.Student object at memory address
-        print("The student studies for 2 hours a day!") #o/p => The student studies for 2 hours a day!
+        print(f"The student studies for {n_hours} hours a day!") #o/p => The student studies for 2 hours a day!
+
+    def sports(self,sports_name):
+        print(f"The student plays {sports_name}")
     
 student1 = Student()
 print(f"The object:{student1}")
 #o/p => The object: <__main__.Student object at memory address>
 
-student1.study() #Here student1 = object and study = function
-
+student1.study(5) #Here student1 = object and study = function
+student1.sports("Football")
+print("-----------------------")
+student2 = Student()
+print(f"The object:{student2}")
+student1.study(3)
+student2.sports("Tennis")
 
 """
 When we call an instance method using the object/instance of the class, Python passes the object itself
